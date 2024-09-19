@@ -1,1 +1,77 @@
 // app global css in SCSS form
+@font-face {
+    font-family: 'Rubik-Regular';
+    src: url('src/fonts/Rubik-Regular.ttf') format('truetype');
+}
+
+
+* {
+    font-family: 'Rubik-Regular',sans-serif;
+}
+
+.custom-input .q-field__control {
+    border-radius: 15px; 
+}
+
+.card{
+    position: absolute;
+    top: 25%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 70%; 
+    z-index: 1000;
+    border-radius: 10px;
+  }
+  
+  .gray-text{
+    color: rgb(160, 160, 160);
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .header{
+    position: absolute;
+    top: 2%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 1000;
+    width: 500px;
+    text-align: center;
+  }
+  
+  .black-btn {
+    background-color: black;
+    color: white;            
+    border-radius: 0px 6px 6px 0px;
+    height: 100%;  
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: -13px;
+  }
+  
+/* 
+Mobile responsive
+*/
+
+  body.screen--xs{
+    .card.mobile{
+      position: absolute;
+      top: 25%; 
+      left: 50%;
+      transform: translateX(-50%); 
+      width: 80%; 
+      z-index: 1000;
+      border-radius: 10px;
+    }
+    
+  .header.mobile{
+    position: absolute;
+    top: 2%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 1000;
+    width: 80%;
+    text-align: center;
+  }
+
+  }
